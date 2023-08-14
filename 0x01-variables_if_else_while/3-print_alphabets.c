@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main displays alphabters in both lowewr
- * and uppercase respectively with a new line
+ * main displays alphabters in both lowewr and uppercase
  * Return: Always 0 (Success)
  */
 int main(void)
