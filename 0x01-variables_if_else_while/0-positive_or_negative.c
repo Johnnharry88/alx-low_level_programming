@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/* Main Entry Point */
+/* Program analyzing integer */
 int main(void)
 {
 	int n;
