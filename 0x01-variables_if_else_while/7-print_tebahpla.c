@@ -10,8 +10,8 @@ int main(void)
 	while (ralp >= 97)
 	{
 		putchar(ralp);
+		ralp--;
 	}
-	ralp--;
 	putchar('\n');
 return (0);
 }
