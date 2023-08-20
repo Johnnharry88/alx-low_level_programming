@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	int school;
+	int alx;
 
-	for (school = 0; school < 10; school++)
+	for (alx = 0; alx <= 9; alx++)
 {
-	putchar(school);
+	putchar(alx+48);
 }
 	putchar('\n');
 return (0);
