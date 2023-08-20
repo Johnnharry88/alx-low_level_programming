@@ -10,7 +10,7 @@ int main(void)
 
 	for (alx = 0; alx <= 9; alx++)
 {
-	putchar(alx+48);
+	putchar(alx + 48);
 }
 	putchar('\n');
 return (0);
