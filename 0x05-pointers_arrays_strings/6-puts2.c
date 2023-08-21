@@ -16,7 +16,7 @@ void puts2(char *str)
 		dir++;
 		cos++;
 	}
-	alpha = (cos - 1);
+	alpha = cos - 1;
 	for (beta = 0; beta <= alpha; beta++)
 	{
 		if (beta % 2 == 0)
