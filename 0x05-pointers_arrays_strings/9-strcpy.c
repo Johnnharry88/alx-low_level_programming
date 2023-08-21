@@ -14,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		pie++;
 	}
-	for (phy = 0; phy < 1; phy++)
+	for ( phy < 1; phy++)
 	{
 		dest[phy] = src[phy];
 	}
