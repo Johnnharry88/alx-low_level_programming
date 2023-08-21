@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strlen -gives out the length of a strng
+ * strlen - program gives out the length of a strng
  * @s: This is a string
  * Return: (count)
  */
