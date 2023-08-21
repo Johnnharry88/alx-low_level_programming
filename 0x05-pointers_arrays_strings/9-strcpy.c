@@ -10,11 +10,11 @@ char *_strcpy(char *dest, char *src)
 	int pie = 0;
 	int phy = 0;
 
-	while (*(src + 1) != '\0')
+	while (*(src + pie) != '\0')
 	{
 		pie++;
 	}
-	for ( ; phy < 1; phy++;)
+	for (phy = 0; phy < pie ; phy++;)
 	{
 		dest[phy] = src[phy];
 	}
