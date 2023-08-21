@@ -2,7 +2,7 @@
 /**
  * strlen -gives out the length of a strng
  * @s: This is a string
- * Return: value of length
+ * Return: (count)
  */
 int _strlen(char *s)
 {
@@ -15,4 +15,3 @@ int _strlen(char *s)
 	}
 return (count);
 }
-
