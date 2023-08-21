@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_strig -program that reverses strings
+ * rev_string -program that reverses strings
  * @s: input string
  * Return: Reversed string
  */
