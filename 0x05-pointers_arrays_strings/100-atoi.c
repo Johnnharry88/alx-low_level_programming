@@ -20,7 +20,7 @@ int _atoi(char *s)
 		if ((*(s + rec) >= '0') && (*(s + rec) <= '9'))
 		{
 			if (x > 0)
-			a* = 10;
+			a *= 10;
 		}
 		rec++;
 	}
