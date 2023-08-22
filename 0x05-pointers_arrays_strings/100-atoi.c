@@ -29,5 +29,5 @@ int _atoi(char *s)
 		o = o + ((*(s + i) - 48) * a);
 		a /= 10;
 	}
-	return (o * p)
+	return (o * p);
 }
