@@ -18,6 +18,8 @@ int _atoi(char *s)
 	{
 		if (x > 0 && (*(s + rec) < '0' || *(s + rec) > '9'))
 		break;
+		if (*(s + rec) == '-')
+		p *= -1;
 		if ((*(s + rec) >= '0') && (*(s + rec) <= '9'))
 		{
 			if (x > 0)
