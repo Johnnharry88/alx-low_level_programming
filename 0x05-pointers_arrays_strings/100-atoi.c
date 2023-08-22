@@ -24,6 +24,7 @@ int _atoi(char *s)
 		{
 			if (x > 0)
 			a *= 10;
+			x++;
 		}
 		rec++;
 	}
