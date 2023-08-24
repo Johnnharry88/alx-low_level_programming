@@ -14,7 +14,7 @@ char *rot13(char *a)
 	{
 		for (al = 0; al < 52; al++)
 		{
-			if (a[alx] == hold[alx])
+			if (a[alx] == hold[al])
 			{
 				a[alx] = hold1[al];
 			}
