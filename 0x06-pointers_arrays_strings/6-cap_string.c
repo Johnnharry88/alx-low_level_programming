@@ -7,6 +7,7 @@
 char *cap_string(char *str)
 {
 	int alx;
+
 	alx = 0;
 
 	while (str[alx])
