@@ -12,7 +12,7 @@ char *rot13(char *a)
 
 	for (alx = 0; a[alx] != '\0'; alx++)
 	{
-		for (al = 0; al <= 52; al++)
+		for (al = 0; al < 52; al++)
 		{
 			if (a[alx] == hold[alx])
 			{
