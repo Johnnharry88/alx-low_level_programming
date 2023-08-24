@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rot13 -program that codes alphabets
  * @a: parameter pointer
