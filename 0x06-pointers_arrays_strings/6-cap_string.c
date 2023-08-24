@@ -24,6 +24,7 @@ char *cap_string(char *str)
 		str[alx - 1] == '!' ||
 		str[alx - 1] == ';' ||
 		str[alx - 1] == '.' ||
+		str[alx - 1] == ' ' ||
 		str[alx - 1] == '"')
 			str[alx] -= 32;
 
