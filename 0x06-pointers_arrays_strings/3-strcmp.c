@@ -9,7 +9,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int alx = 0;
 
-	 for (alx = 0; s1[alx] != '\0' && s2[alx] != '\0'; alx++)
+	for (alx = 0; s1[alx] != '\0' && s2[alx] != '\0'; alx++)
 	{
 		if (s1[alx] != s2[alx])
 		{
