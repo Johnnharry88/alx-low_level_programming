@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * pritn_numbers - prints number characters
+ * print_number - prints number characters
  * @n: paramter of interger
  * Return: (0)
  */
-void print_numbers(int n)
+void print_number(int n)
 {
 	unsigned int digit;
-	
+
 	digit = n;
 
 	if (n < 0)
