@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - returns captial letters for input string
+ * cap_string -program returns capital letters for input string
  * @str: Input string
  * Return: str
  */
