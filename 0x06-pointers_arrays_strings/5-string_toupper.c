@@ -12,7 +12,6 @@ char *string_toupper(char *n)
 	{
 		if (n[alx] >= 'a' && n[alx] <= 'z')
 		n[alx] = n[alx] - 32;
-		alx++;
 	}
 return (n);
 }
