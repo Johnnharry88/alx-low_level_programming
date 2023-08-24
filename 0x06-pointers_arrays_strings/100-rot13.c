@@ -1,25 +1,25 @@
 #include "main.h"
 /**
- * rot13 -programs that encodes alphabets
- * @s: string parameter pointer
- *Return: s
+ * rot13 -program that codes alphabets
+ * @a: parameter pointer
+ * Return: a
  */
-char *rot13(char *)
+char *rot13(char *a)
 {
 	int alx, al;
-	char hold1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-	char hold2[] = "NOPQRSTUVWXYZABCDEFGHIJLKMnopqrstuvwxyzabcdefghijklm"
+	char hold[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char hold1[] = "NOPQRSTVUWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (alx = 0; s[alx] != '\0'; alx++)
+	for (alx = 0; a[alx] != '\0'; alx++)
 	{
 		for (al = 0; al <= 52; al++)
 		{
-			if (s[alx] == hold1[alx])
+			if (a[alx] == hold[alx])
 			{
-				s[alx] = hold2[al];
+				a[alx] = hold1[al];
 			}
-			break';
+			break;
 		}
 	}
-return (s);
+return (a);
 }
