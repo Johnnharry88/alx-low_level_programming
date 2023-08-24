@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	{
 		string++;
 	}
-	for (g = 0; src[g] != '\0'; g++; string++)
+	for (; src[g] != '\0'; g++, string++)
 	{
 		dest[string] = src[g];
 	}
