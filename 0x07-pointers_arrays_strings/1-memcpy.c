@@ -13,8 +13,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (alx < school)
 	{
 		dest[alx] = src[alx];
-		n -=1;
-		alx +=1;
+		n -= 1;
+		alx += 1;
 	}
 return (dest);
 }
