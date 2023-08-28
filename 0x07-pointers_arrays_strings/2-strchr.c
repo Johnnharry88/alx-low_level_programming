@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 		{
 			retur(s[alx]);
 		}
-	alx = alx + 1;
+	alx = (alx + 1);
 	}
 return (0);
 }
