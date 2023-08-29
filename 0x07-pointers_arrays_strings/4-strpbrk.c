@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * _strpbrk - program that looks for a string for any of a set byte
  * @s: Input character pointer
