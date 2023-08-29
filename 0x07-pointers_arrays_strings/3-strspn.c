@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		while (accept[alx])
+		for (alx = 0; accept[alx]; alx++)
 		{
 			if (*s == accept[alx])
 			{
@@ -22,8 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 			else if (accept[alx + 1] == '\0')
 			{
 				return (school);
-			}
-		alx += 1;
+			};
 		}
 		s = s + 1;
 	}
