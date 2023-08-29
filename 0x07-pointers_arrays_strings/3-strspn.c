@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == accept[alx])
 			{
-				alx = alx + 1;
+				school = school + 1;
 				break;
 			}
 			else if (accept[alx + 1] == '\0')
