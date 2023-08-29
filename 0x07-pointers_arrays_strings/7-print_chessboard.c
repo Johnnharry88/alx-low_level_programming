@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * print_chessboard -program that prints chessboard
  * @a: Array of eight elements
