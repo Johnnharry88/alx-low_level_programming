@@ -15,8 +15,8 @@ char *_strpbrk(char *s, char *accept)
 		{
 		if (*s == accept[alx])
 		return (s);
-		s = s + 1;
 		}
+	s = s + 1;
 	}
 return ('\0');
 }
