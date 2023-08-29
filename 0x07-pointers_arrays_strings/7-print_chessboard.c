@@ -17,5 +17,4 @@ void print_chessboard(char (*a)[8])
 		school += 1;
 		}
 	}
-return (0);
 }
