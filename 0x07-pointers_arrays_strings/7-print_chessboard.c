@@ -10,10 +10,11 @@ void print_chessboard(char (*a)[8])
 
 	for (alx = 0; alx < 8; alx++)
 	{
-		for (school = 0; school < 8; school++)
+		while ( school < 8)
 		{
 			_putchar(a[alx][school]);
 			_putchar('\n');
+		school += 1;
 		}
 	}
 }
