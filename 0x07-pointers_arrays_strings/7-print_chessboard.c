@@ -6,7 +6,7 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int alx, school = 0;
+	int alx = 0, school = 0;
 
 	for (alx = 0; alx < 8; alx++)
 	{
@@ -17,4 +17,5 @@ void print_chessboard(char (*a)[8])
 		school += 1;
 		}
 	}
+return (0);
 }
