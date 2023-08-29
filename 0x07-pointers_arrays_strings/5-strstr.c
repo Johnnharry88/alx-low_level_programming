@@ -19,5 +19,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*school == '\0')
 		return (haystack);
+	haystack = haystack + 1;
 	}
+return (0);
 }
