@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				return (school);
 			}
-		alx = alx + 1;
+		alx += 1;
 		}
 		s = s + 1;
 	}
