@@ -13,8 +13,8 @@ void print_chessboard(char (*a)[8])
 		while (school < 8)
 		{
 			_putchar(a[alx][school]);
-			_putchar('\n');
 		school += 1;
 		}
+	_putchar('\n')
 	}
 }
