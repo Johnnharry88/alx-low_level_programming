@@ -15,6 +15,6 @@ void print_chessboard(char (*a)[8])
 			_putchar(a[alx][school]);
 		school += 1;
 		}
-	_putchar('\n')
+	_putchar('\n');
 	}
 }
