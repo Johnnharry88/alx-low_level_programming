@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * print_chessboard -program that prints chessboard
  * @a: Array of eight elements
@@ -6,9 +7,9 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int alx = 0, school = 0;
+	int alx, school = 0;
 
-	for (alx = 0; alx < 8; alx++)
+	for (alx = 0; alx <= 7; alx++)
 	{
 		while (school < 8)
 		{
