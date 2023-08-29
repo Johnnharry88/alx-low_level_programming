@@ -27,5 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		s = s + 1;
 	}
-return (school);
+return (0);
 }
