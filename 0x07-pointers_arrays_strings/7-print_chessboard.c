@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_chessboard - program that prints chessboard 
+ * print_chessboard -program that prints chessboard
  * @a: Array of eight elements
  * Return: (0) Success
  */
@@ -8,7 +8,7 @@ void print_chessboard(char (*a)[8])
 {
 	int alx, school
 
-	while (alx <=7)
+	while (alx <= 7)
 	{
 		while (school <= 7)
 		{
