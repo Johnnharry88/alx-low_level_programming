@@ -1,17 +1,31 @@
 #include "main.h"
 /**
- * _sqrt_recursion -programs that estimates the square root of integer
- * @n: Integer value
- * Return: Square root of numbers
+ * sqt_x - program that returns natural numbers
+ * @y: integer number
+ * @z: integer number
+ * Return: square root 
  */
-int _sqrt_recursion(int n)
+int sqt_x(int a, int z)
 {
-	if (n < 0)
+	if (z * z == a)
+	{
+		return (z);
+	}
+	else if (z * z > a)
 	{
 		return (-1);
 	}
-	else
+	else 
 	{
-		return (_sqrt_recursion(n));
+		return (sqt_x(a, z + 1));
 	}
+}
+ /**
+ *  _sqrt_recursion -programs that estimates the square root of integer
+ * @n: Integer value
+ * Return: Natural square root
+ */
+int _sqrt_recursion(int n)
+{
+	return (sqt_x(n, 0));
 }
