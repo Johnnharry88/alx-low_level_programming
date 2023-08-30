@@ -3,7 +3,7 @@
  * _pow_recursion - program that calculats the power of a given integer
  * @x: Input integer
  * @y: Input integer
- * Return:power of integer values
+ * Return: power of integer values
  */
 int _pow_recursion(int x, int y)
 {
@@ -17,6 +17,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * pow(x, y - 1));
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
