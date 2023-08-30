@@ -11,7 +11,7 @@ int prime(int x, int y)
 	{
 		return (1);
 	}
-	else if (x % y == 0 && y >= 0)
+	else if (x % y == 0 && y >= 1)
 	{
 		return (0);
 	}
