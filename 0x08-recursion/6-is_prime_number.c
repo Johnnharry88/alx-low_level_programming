@@ -27,7 +27,7 @@ int prime(int x, int y)
  */
 int is_prime_number(int n)
 {
-	if (n < 2)
+	if (n <= 1)
 	{
 		return (o);
 	}
