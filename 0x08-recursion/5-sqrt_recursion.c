@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * sqt_x - program that returns natural numbers
- * @y: integer number
+ * @a: integer number
  * @z: integer number
- * Return: square root 
+ * Return: square root
  */
 int sqt_x(int a, int z)
 {
@@ -15,13 +15,14 @@ int sqt_x(int a, int z)
 	{
 		return (-1);
 	}
-	else 
+	else
 	{
 		return (sqt_x(a, z + 1));
 	}
 }
- /**
- *  _sqrt_recursion -programs that estimates the square root of integer
+
+/**
+ * _sqrt_recursion -program that returns natural square root of number
  * @n: Integer value
  * Return: Natural square root
  */
