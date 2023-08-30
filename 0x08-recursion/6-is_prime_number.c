@@ -1,4 +1,4 @@
-#include "mina.h"
+#include "main.h"
 /**
  * prime -program that evaluates the prime status of an integer
  * @x: Input integer
@@ -29,7 +29,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
-		return (o);
+		return (0);
 	}
 	else
 	{
