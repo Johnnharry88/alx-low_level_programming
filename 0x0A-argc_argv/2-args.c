@@ -6,12 +6,12 @@
  * Return: (0) Success
  */
 int main(int argc, char *argv[])
-{	int  i = 1;
+{
+	int  i = 1;
 
-	while (argc >= 1)
+	for (alx = 0; alx < argc; alx++)
 	{
 		printf("%s\n", argv[i]);
-		i++;
 	}
 	return (0);
 }
