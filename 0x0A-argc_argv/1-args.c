@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int alx = 0;
 	for (argc = 1; *argv[alx] != '\0';argc++, alx++)
 	{
-		printf("%d", argc - 1);
+		printf("%d\n", argc - 1);
 	}
 return (0);
 }
