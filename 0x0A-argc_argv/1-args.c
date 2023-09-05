@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 
 	while (*argv[alx] != '\0')
 	{
+		alx++;
 		argc++;
 	}
 	printf("%d\n", argc);
