@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main -program to be executed
- * argc - Argument Counter of integer type
- * argv[] - Strint pointer
+ * print_appname -program to be executed
+ * argc: Argument Counter of integer type
+ * argv[]: Strint pointer
  * Return: (0) Success
  */
 int print_appname (int argc, char *argv[])
