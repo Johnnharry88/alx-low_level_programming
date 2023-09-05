@@ -9,11 +9,9 @@ int main(int argc, char *argv[])
 {
 	int alx = 0;
 
-	while (*argv[alx] != '\0')
+	if (argv[alx])
 	{
-		alx++;
-		argc++;
+		printf("%d\n", argc - 1);
 	}
-	printf("%d\n", argc);
-	return (0);
+return (0);
 }
