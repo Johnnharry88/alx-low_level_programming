@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * print_appname -program to be executed
- * argc: Argument Counter of integer type
- * argv[]: Strint pointer
+ * @argc: Argument Counter of integer type
+ * @argv: String pointer
  * Return: (0) Success
  */
-int print_appname (int argc, char *argv[])
+int print_appname(int argc, char *argv[])
 {
-	_putchar(&arg[0]);
+	_putchar(*arg[0]);
 	_putchar('\n');
 return (0);
 }
