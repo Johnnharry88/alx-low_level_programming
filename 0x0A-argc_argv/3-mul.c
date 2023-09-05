@@ -17,9 +17,9 @@ int main(int argc, char *argv[])
 	else
 	{
 		alx1 = atoi(argv[argc - 2]};
-		alx2 = atoi(argv[argc - 2]};
+		alx2 = atoi(argv[argc - 1]};
 		final = alx1 * alx2;
 		printf("%d\n", final);
 	}
-	return (0);
+return (0);
 }
