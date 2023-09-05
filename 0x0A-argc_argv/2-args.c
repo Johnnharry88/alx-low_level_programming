@@ -6,13 +6,11 @@
  * Return: (0) Success
  */
 int main(int argc, char *argv[])
-{
-	int alx = 0;
-
-	while (argc != 0)
+{	int  i = 1;
+	while (argc >= 1)
 	{
-		printf("%s\n", argv[alx]);
-		alx += 1;
+		printf("%s\n", argv[i]);
+		i++;
 	}
 	return (0);
 }

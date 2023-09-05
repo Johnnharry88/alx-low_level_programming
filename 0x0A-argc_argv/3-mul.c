@@ -7,13 +7,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int alx, school, mul = 1;
+	int alx = 1, school, mul = 1;
 
-	for (alx = 1; alx < argc; alx++)
-	{
-		school = atoi(argv[alx]);
-		mul = mul * school;
-	}
+	if (alx > 0)
+	{	for (alx = 1; alx < argc; alx++)
+		{
+			school = atoi(argv[alx]);
+			mul = mul * school;
+			alx++;
+		}
 	printf("%d\n", mul);
+	}
+	else
+		printf("Error\n");
 	return (0);
 }
