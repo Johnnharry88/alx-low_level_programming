@@ -8,7 +8,8 @@
 int main(int argc, char *argv[])
 {
 	int alx = 0;
-	for (argc = 1; *argv[alx] != '\0';argc++, alx++)
+
+	if (*argv[alx]	!= '\0')
 	{
 		printf("%d\n", argc);
 	}
