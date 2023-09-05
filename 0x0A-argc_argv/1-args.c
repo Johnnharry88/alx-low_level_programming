@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc == *argv[0 + 1])
+	for (argc = 0; *argv[argc - 1] == '\0'; argc++)
 	{
 		printf("%d", argc);
 	}
