@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	{
 	return (NULL);
 	}
-	
+
 	while (s1[a] != '\0')
 	{
 		alx[a] = s1[a];
