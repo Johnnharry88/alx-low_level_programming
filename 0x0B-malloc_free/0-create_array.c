@@ -10,7 +10,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int sch;
 	char *alx;
 
-	alx = (char)malloc(size * sizeof(char));
+	alx = malloc(size * sizeof(char));
 	if (size != 0 || alx != NULL)
 	{
 		for (sch = 0; sch < size; sch++)
