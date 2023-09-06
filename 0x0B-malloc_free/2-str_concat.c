@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		school = school + 1;
 	}
-	alx = malloc((alpha + sch + 1) * sizeof(char));
+	alx = malloc(1 + (alpha + sch + ) * sizeof(char));
 	if (alx == NULL)
 	{
 		return (NULL);
