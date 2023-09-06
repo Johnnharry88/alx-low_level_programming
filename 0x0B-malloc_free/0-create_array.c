@@ -9,15 +9,15 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int sch;
 	char *alx;
-	
-	alx = malloc(size * sizeof(char));
+
+	alx = (char)malloc(size * sizeof(char));
 	if (size != 0 || alx != NULL)
 	{
 		for (sch = 0; sch < size; sch++)
 		alx[sch] = c;
 		return (alx);
 	}
-	else 
+	else
 	{
 		return (NULL);
 	}
