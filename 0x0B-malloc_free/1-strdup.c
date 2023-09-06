@@ -14,9 +14,11 @@ char *_strdup(char *str)
 	return (NULL);
 
 	while (str[alx] != '0')
-	alx= alx + 1;
+	{
+		alx = alx + 1;
+	}
 
-	alpha = (char *) malloc(sizeof(char) * alx + 1);
+	alpha = (char *) malloc((sizeof(char) * alx) + 1);
 
 	for (sch = 0; str[sch]; sch++)
 	{
