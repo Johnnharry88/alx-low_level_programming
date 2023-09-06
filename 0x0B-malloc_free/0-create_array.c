@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	alx[sch] = c;
 	size = size + 1;
 	}
-	else
+	if(alx == NULL)
 	{
 		return (NULL);
 	}
