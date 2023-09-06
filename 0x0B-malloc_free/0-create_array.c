@@ -11,7 +11,11 @@ char *create_array(unsigned int size, char c)
 	char *alx;
 
 	alx = (char *) malloc(size * sizeof(char));
+	while (size == 0)
+	{
 	for (sch = 0; sch < size; sch++)
-		alx[sch] = c;
+	alx[sch] = c;
+	size = size + 1;
+	}
 return (alx);
 }
