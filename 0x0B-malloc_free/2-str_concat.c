@@ -8,8 +8,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *alx;
-	int alpha;
-	int sch;
+	int alpha = 0;
+	int sch = 0;
 
 	if (s1 == NULL)
 	{
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	sch = 0;
 	while (s1[alpha] !- '\0')
 	{
-		alx[alpha] = s[alpha]
+		alx[alpha] = s1[alpha]
 	alpha += 1
 	}
 	while (s2[sch] != '\0')
