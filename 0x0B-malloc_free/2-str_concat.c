@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (s2[sch] != '\0')
 	{
-		school = school + 1;
+		sch = sch + 1;
 	}
 	alx = malloc(1 + (alpha + sch) * sizeof(char));
 	if (alx == NULL)
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		alx[alpha] = s2[sch]
 		alpha = alpha + 1;
-		school = school + 1;
+		sch = sch + 1;
 	}
 	alx[alpha] = '\0';
 	return (alx);
