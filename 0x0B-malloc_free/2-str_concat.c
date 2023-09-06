@@ -8,8 +8,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *alx;
-	int alpha = 0;
-	int sch = 0;
+	int alpha = 0, a = 0;
+	int sch = 0, s = 0;
 
 	if (s1 == NULL)
 	{
@@ -30,19 +30,19 @@ char *str_concat(char *s1, char *s2)
 	alx = malloc(1 + (alpha + sch) * sizeof(char));
 	if (alx == NULL)
 	{
-		return (NULL);
+	return (NULL);
 	}
 	
-	while (s1[alpha] != '\0')
+	while (s1[a] != '\0')
 	{
-		alx[alpha] = s1[alpha];
-		alpha += 1;
+		alx[a] = s1[a];
+		a += 1;
 	}
-	while (s2[sch] != '\0')
+	while (s2[s] != '\0')
 	{
-		alx[alpha] = s2[sch];
-		alpha = alpha + 1;
-		sch = sch + 1;
+		alx[a] = s2[s];
+		a = a + 1;
+		s = s + 1;
 	}
 	alx[alpha] = '\0';
 	return (alx);
