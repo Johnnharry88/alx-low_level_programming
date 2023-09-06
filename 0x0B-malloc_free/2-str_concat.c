@@ -34,10 +34,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	alpha = 0;
 	sch = 0;
-	while (s1[alpha] !- '\0')
+	while (s1[alpha] != '\0')
 	{
 		alx[alpha] = s1[alpha]
-	alpha += 1
+	alpha += 1;
 	}
 	while (s2[sch] != '\0')
 	{
