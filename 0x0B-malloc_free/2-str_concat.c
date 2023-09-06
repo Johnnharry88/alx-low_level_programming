@@ -44,6 +44,6 @@ char *str_concat(char *s1, char *s2)
 		a = a + 1;
 		s = s + 1;
 	}
-	alx[alpha] = '\0';
+	alx[a] = '\0';
 	return (alx);
 }
