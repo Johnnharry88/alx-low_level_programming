@@ -10,8 +10,8 @@ char *create_array(unsigned int size, char c)
 	unsigned int sch;
 	char *alx;
 
-	alx = malloc(size * sizeof(char));
-	if (!(size < 0))
+	alx = (char *) malloc(size * sizeof(char));
+	if (size >= 0)
 	{
 		for (sch = 0; sch < size; sch++)
 		alx[sch] = c;
