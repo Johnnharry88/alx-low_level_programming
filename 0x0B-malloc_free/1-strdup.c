@@ -7,17 +7,21 @@
  */
 char *_strdup(char *str)
 {
-	int alx = 0, sch = 0;
+	int alx = 0, sch
 	char *alpha;
 
 	if (str == NULL)
 	return (NULL);
+
 	while (str[alx] != '0')
-	alx++;
-	alpha = malloc(sizeof(char) * (alx + 1));
-	if (char *alpha == NULL)
-		return (NULL);
+	alx= alx + 1;
+
+	alpha = (char *) malloc(sizeof(char) * alx + 1);
+
 	for (sch = 0; str[sch]; sch++)
-	alpha[sch] = str[sch];
-	return (pha);
+	{
+		alpha[sch] = str[sch];
+	}
+	alpha[sch] = '\0';
+return (alpha);
 }
