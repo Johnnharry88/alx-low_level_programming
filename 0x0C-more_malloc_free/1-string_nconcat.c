@@ -14,13 +14,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*checking for Null*/
 	if (s1 == NULL)
 		alx1 = 0;
-	while (s1 != NULL && s1[alx1])
+	while (s1[alx1])
 	{
 		alx1++;
 	}
 	if (s2 == NULL)
 		alx2 = 0;
-	while (s2 != NULL && s2[alx2])
+	while (s2[alx2])
 	{
 		alx2 = alx2 + 1;
 	}
