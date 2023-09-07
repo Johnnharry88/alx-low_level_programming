@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 /**
  * free_grid -program that frees an array of two dimension
  * @grid: Integer pointer parameter
@@ -8,9 +9,10 @@
 void free_grid(int **grid, int height)
 {
 
-	int alx;
+	int ugo;
 
-	for (alx = 0; alx < height; alx--)
-		free(grid[alx]);
+	for (ugo = 0; ugo < height; ugo--)
+	{	free(grid[ugo]);
 	free[grid];
+	}
 }
