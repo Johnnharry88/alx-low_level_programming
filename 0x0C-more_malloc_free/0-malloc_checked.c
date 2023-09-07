@@ -7,9 +7,14 @@
 void *malloc_checked(unsigned int b)
 {
 	void *alx;
-
+/* assigning a malloc to b */
 	alx = malloc(b);
 	if (alx == NULL)
-	exit(98);
-	return (alx);
+	{
+		exit(98);
+	}
+	else
+	{
+		return (alx);
+	}
 }
