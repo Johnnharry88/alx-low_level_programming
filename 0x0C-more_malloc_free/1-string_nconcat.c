@@ -28,8 +28,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	school = malloc(sizeof(char) * (alx1 + 1 + n));
 	else
 	school = malloc(sizeof(char) * (alx1 + alx2 + 1));
-	if (!school)
-	return (NULL);
+	if (school == NULL)
+		return (NULL);
 	for (sch = 0; sch < alx1; sch++)
 		school[sch] = s1[sch];
 	while (n < alx2 && sch < (alx1 + n))
@@ -37,5 +37,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (n >= alx2 && sch < (alx1 + alx2))
 		school[sch++] = s2[best++];
 	school[sch++] = '\0';
-	return (school);
+return (school);
 }
