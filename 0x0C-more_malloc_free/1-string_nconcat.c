@@ -8,36 +8,36 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int alx, sch, best;
+	unsigned int alx1, alx2, sch, best;
 	char *school;
 
 	/*checking for Null*/
 	if (s1 == NULL)
-		alx = 0;
-	else
-	for (alx = 0; s1[alx]; ++alx)
+		alx1 = 0;
+	else if (s1 != NULL)
+	while (s1[alx1])
 	{
-		;
+		alx1++;
 	}
 	if (s2 == NULL)
-		sch = 0;
+		alx2 = 0; 
+	else if (s2 != NULL)
+	while (s2[alx2])
+	{
+		alx2 = alx2 + 1;
+	}
+	if (n < alx2)
+	school = malloc(sizeof(char) * (alx1 + 1 + n));
 	else
-	for (sch = 0; s2[sch]; ++sch)
-	{
-		;
-	}
-	if (sch > 0)
-		sch = n;
-	/* Assigning malloc */
-	school = malloc(sizeof(char) * (alx * sch + 1));
-	if (school == NULL)
+	school = malloc(sizeof(char) * (alx1 + alx2 + 1));
+	if (!school)
 	return (NULL);
-	for (best = 0; best < alx; best++)
-		school[best] = s1[best];
-	for (best = 0; best < sch; best++)
-	{
-		school[best + alx] = s2[best];
-	}
-	school[alx + sch] = '\0';
+	for (sch = 0; sch < alx1; sch++)
+		school[sch] = s1[sch];
+	while (n < alx2 && best < (alx1 + n))
+		school[sch++] = s2[best++];
+	while (n >= alx2 && best < (alx1 + alx2))
+		school[sch++] = s2[best++];
+	school[sch++] = '\0';
 	return (school);
 }
