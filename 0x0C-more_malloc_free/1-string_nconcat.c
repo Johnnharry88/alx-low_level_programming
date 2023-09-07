@@ -36,4 +36,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		school[sch++] = s2[best++];
 	school[sch++] = '\0';
 return (school);
+_putchar('\n');
 }
