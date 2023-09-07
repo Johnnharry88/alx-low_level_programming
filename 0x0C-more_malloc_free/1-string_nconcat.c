@@ -15,11 +15,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		alx = 0;
 	else
+	for (alx = 0; s1[alx]; ++alx)
 	{
-		for (alx = 0; s1[alx]; ++alx)
-		{
-			;
-		}
+		;
 	}
 	if (s2 == NULL)
 		sch = 0;
