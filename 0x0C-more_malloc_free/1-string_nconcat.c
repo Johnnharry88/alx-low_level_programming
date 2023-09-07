@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (sch > 0)
 		sch = n;
 	/* Assigning malloc */
-	school = malloc(sizeof(char) * (alx * sch) + 1);
+	school = malloc(sizeof(char) * (alx * sch + 1));
 	if (school == NULL)
 	return (NULL);
 	for (best = 0; best < alx; best++)
