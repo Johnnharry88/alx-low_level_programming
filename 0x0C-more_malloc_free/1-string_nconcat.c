@@ -20,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		alx1++;
 	}
 	if (s2 == NULL)
-		alx2 = 0; 
+		alx2 = 0;
 	else if (s2 != NULL)
 	while (s2[alx2])
 	{
