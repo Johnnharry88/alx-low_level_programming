@@ -32,9 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (NULL);
 	for (sch = 0; sch < alx1; sch++)
 		school[sch] = s1[sch];
-	while (n < alx2 && best < (alx1 + n))
+	while (n < alx2 && sch < (alx1 + n))
 		school[sch++] = s2[best++];
-	while (n >= alx2 && best < (alx1 + alx2))
+	while (n >= alx2 && sch < (alx1 + alx2))
 		school[sch++] = s2[best++];
 	school[sch++] = '\0';
 	return (school);
