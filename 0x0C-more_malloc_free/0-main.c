@@ -5,10 +5,9 @@ julien@ubuntu:~/0x0b. more malloc, free$ cat 0-main.c
 #include <limits.h>
 
 /**
- *  * main - check the code
- *   *
- *    * Return: Always 0.
- *     */
+ * main - check the code
+ * Return: Always 0.
+ */
 int main(void)
 {
 	    char *c;
