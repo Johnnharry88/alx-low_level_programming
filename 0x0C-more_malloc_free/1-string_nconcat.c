@@ -13,18 +13,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		alx1 = 0;
-	while (s1[alx1])
+	while (s1 && s1[alx1])
 		alx1++;
 	if (s2 == NULL)
 		alx2 = 0;
-	while (s2[alx2])
+	while (s2 && s2[alx2])
 	{
 		alx2 = alx2 + 1;
 	}
 	if (n < alx2)
-	school = malloc(sizeof(char) * (alx1 + 1 + n));
+		school = malloc(sizeof(char) * (alx1 + 1 + n));
 	else
-	school = malloc(sizeof(char) * (alx1 + alx2 + 1));
+		school = malloc(sizeof(char) * (alx1 + alx2 + 1));
 	if (!school)
 		return ("");
 	while (sch < alx1)
