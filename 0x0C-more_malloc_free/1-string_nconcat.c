@@ -11,7 +11,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int alx1, alx2, sch, best;
 	char *school;
 
-	/*checking for Null*/
 	if (s1 == NULL)
 		alx1 = 0;
 	while (s1[alx1])
@@ -26,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	school = malloc(sizeof(char) * (alx1 + 1 + n));
 	else
 	school = malloc(sizeof(char) * (alx1 + alx2 + 1));
-	if (school == NULL)
+	if (!school)
 		return (NULL);
 	while (sch < alx1)
 	{
