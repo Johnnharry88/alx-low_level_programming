@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	school = malloc(sizeof(char) * (alx1 + alx2 + 1));
 	if (!school)
-		return (NULL);
+		return ("");
 	while (sch < alx1)
 	{
 		school[sch] = s1[sch];
