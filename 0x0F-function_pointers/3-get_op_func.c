@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (sch <= 9)
 	{
-		if (s[0] == (*bnk).op[sch] && s[1] =='\0')
+		if (s[0] == (*bnk).op[sch] && s[1] == '\0')
 			break;
 	sch = sch + 1;
 	}
