@@ -17,10 +17,11 @@ int (*get_op_func(char *s))(int, int)
 
 	int sch;
 
-	for (sch = 0; sch <= 9; sch++)
+	while (bnk[sch].op != NULL)
 	{
 		if (s[0] == (*bnk).op[sch])
 			break;
+	sch = sch + 1;
 	}
 	return (bnk[sch / 2].f);
 }
