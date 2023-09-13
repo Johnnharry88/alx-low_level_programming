@@ -3,6 +3,7 @@
  * int_index - program that searches for integers
  * @cmp: pointer to fucntion that compares integer values
  * @size: Array size
+ * @array: Array pointer
  * Return: (-1) or (0) or cmp
  */
 int int_index(int *array, int size, int (*cmp)(int))
