@@ -3,7 +3,7 @@
  * sum_them_all -function that sums up integer with varying number
  * of arguments
  * @n: The first integer input/arguments
- * Return: (0) or sum
+ * Return: (0) or ans
  */
 int sum_them_all(const unsigned int n, ...)
 {
