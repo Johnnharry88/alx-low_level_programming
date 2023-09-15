@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	while (alx < byt)
 	{
-		printf("%02x", sol[alx] & 0xFF);
+		printf("%02hhx", sol[alx]);
 		if (alx != byt - 1)
 			printf(" ");
 	alx = alx + 1;
