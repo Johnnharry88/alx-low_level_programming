@@ -16,7 +16,7 @@ void free_list(list_t *head)
 		ram = head;
 		head = head->next;
 		free(ram->str);
-		free(rram);
+		free(ram);
 	}
 	free(head);
 }
