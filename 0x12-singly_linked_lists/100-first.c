@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
+
+void front_main(void)__attribute__((constructor));
 /**
  * front_main - a function that prnts a string  before main.
  * function execution
