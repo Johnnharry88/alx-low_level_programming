@@ -3,7 +3,7 @@ SECTION .data
 	.text
 	global main
 	main:
-		mov edx, 17 
+		mov edx, 17
 		mov ecx, msg
 		mov, ebx, 1
 		mov, eax, 4
