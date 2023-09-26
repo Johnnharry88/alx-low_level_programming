@@ -7,8 +7,8 @@ size_t unique_counter(listint_t *head);
  */
 size_t unique_counter(listint_t *head)
 {
-	listint_t alx;
-	listint_t sch;
+	listint_t *alx;
+	listint_t *sch;
 	size_t rec = 1;
 
 	if (head == NULL)
@@ -27,8 +27,15 @@ size_t unique_counter(listint_t *head)
 			{
 				rec = rec + 1;
 				alx = (*alx).next;
+				sch = (*sch).next;
 			}
-			return (rec);
+			alx = (*alx).next;
+			while (alx != sch)
+			{
+				rec += 1;
+				alx = (*alx).next;
+			}
+		return (rec);
 		}
 		alx = (*alx).next;
 		sch = (sch->next)->next;
@@ -37,7 +44,7 @@ size_t unique_counter(listint_t *head)
 }
 
 /**
- * free_listsint - free listint_t.
+ * free_listint_safe - free listint_t.
  * @h: pointer to address of first node
  * Return: size of listint_t
  */
@@ -70,4 +77,3 @@ size_t free_listint_safe(listint_t *h)
 	}
 	return (rec);
 }
-
