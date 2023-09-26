@@ -1,11 +1,11 @@
 #include "lists.h"
-size_t unique_counter(listint_t *head);
+
 /**
  * unique_counter - counts the number of nodes in a listint_t.
  * @head: pointer to first node of listint_t.
  * Return: 0 or number of nodes in listint_t
  */
-size_t unique_counter(listint_t *head)
+size_t loop_counter(listint_t *head)
 {
 	listint_t *alx;
 	listint_t *sch;
@@ -48,16 +48,16 @@ size_t unique_counter(listint_t *head)
  * @h: pointer to address of first node
  * Return: size of listint_t
  */
-size_t free_listint_safe(listint_t *h)
+size_t free_listint_safe(listint_t **h)
 {
 	listint_t *hold;
 	size_t rec;
 	size_t idx;
 
-	idx = unique_counter(*h);
+	idx = loop_counter(*h);
 	if (idx == 0)
 	{
-		for (idx = 0; h != NULL && *h != NULL; idx++)
+		for (; h != NULL && *h != NULL; idx++)
 		{
 			hold = (*h)->next;
 			free(*h);
@@ -75,5 +75,6 @@ size_t free_listint_safe(listint_t *h)
 		}
 		*h = NULL;
 	}
+	h = NULL;
 	return (rec);
 }
