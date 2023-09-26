@@ -6,7 +6,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t alx = 1;
+	size_t alx = 0;
 
 	if (h && ((*h).next))
 		alx = alx + listint_len((*h).next);
