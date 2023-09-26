@@ -9,7 +9,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *hold;
 	listint_t *dup = *head;
-	unsigned int point;
+	unsigned int point = 0;
 
 	if (dup == NULL)
 		return (-1);
