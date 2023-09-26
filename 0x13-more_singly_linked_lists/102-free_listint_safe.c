@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * unique_counter - counts the number of nodes in a listint_t.
+ * loop_counter - counts the number of nodes in a listint_t.
  * @head: pointer to first node of listint_t.
  * Return: 0 or number of nodes in listint_t
  */
