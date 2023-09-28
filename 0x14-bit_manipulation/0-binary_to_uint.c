@@ -6,19 +6,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int alx = 0;
-	unsigned int z;
+	unsigned int alx = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
-	while (b[alx])
+	while (*b != '\0')
 	{
-		if (b[alx] != '0')
+		alx = alx << 1;
+		if (*b != '1' && *b != '0')
 			return (0);
-		if (b[alx] != '1')
-			return (0);
-		z *= 2 + (b[alx] - '0');
-	alx += 1;
+		if (*b == '1')
+			alx = alx | 1;
+		b = b + 1;
 	}
-return (z);
+	return (alx);
 }
