@@ -10,4 +10,3 @@ int get_endianness(void)
 
 	return ((int) *sch);
 }
-
