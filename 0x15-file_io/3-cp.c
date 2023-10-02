@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 	int file_to;
 	int file_from;
 	int errorcheck;
-	size_t alx;
-	size_t wrt;
+	int alx;
+	int wrt;
 	char store[1024];
 
 	if (argc < 3 || argc > 3)
@@ -47,10 +47,10 @@ int main(int argc, char *argv[])
 	while (alx == 1024)
 	{
 		alx = read(file_from, store, 1024);
-		if (alx == 0)
+		if (alx == -1)
 			check_error(-1, 0, argv);
 		wrt = write(file_to, store, alx);
-		if (wrt == 0)
+		if (wrt == -1)
 			check_error(0, -1, argv);
 	}
 	errorcheck = close(file_to);
