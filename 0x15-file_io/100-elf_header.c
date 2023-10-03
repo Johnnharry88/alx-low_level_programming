@@ -64,7 +64,7 @@ void wond_print(unsigned char *e_ident)
  */
 void classicprint(unsigned char *e_ident)
 {
-	printf(" Class:  " );
+	printf(" Class:  ");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -131,7 +131,6 @@ void ver_print(unsigned char *e_ident)
  * Return: void.
  */
 void osprint(unsigned char *e_ident)
-{
 	printf("  OS/ABI:  ");
 	switch (e_ident[EI_OSABI])
 	{
