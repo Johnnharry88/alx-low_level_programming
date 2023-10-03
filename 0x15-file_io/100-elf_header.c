@@ -64,7 +64,7 @@ void wond_print(unsigned char *e_ident)
  */
 void classicprint(unsigned char *e_ident)
 {
-	printf("  Class:                             ");
+	printf(" Class:  " );
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -89,7 +89,7 @@ void classicprint(unsigned char *e_ident)
  */
 void dataprint(unsigned char *e_ident)
 {
-	printf("  Data:                              ");
+	printf("  Data:  ");
 	switch (e_ident[EI_DATA])
 	{
 		case ELFDATA2LSB:
@@ -132,7 +132,7 @@ void ver_print(unsigned char *e_ident)
  */
 void osprint(unsigned char *e_ident)
 {
-	printf("  OS/ABI:                            ");
+	printf("  OS/ABI:  ");
 	switch (e_ident[EI_OSABI])
 	{
 		case ELFOSABI_ARM:
