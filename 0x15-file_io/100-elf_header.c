@@ -131,6 +131,7 @@ void ver_print(unsigned char *e_ident)
  * Return: void.
  */
 void osprint(unsigned char *e_ident)
+{
 	printf("  OS/ABI:  ");
 	switch (e_ident[EI_OSABI])
 	{
