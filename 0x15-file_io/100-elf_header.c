@@ -256,7 +256,7 @@ void elfxit(int a)
  * @argv: Array of pointer to arguments.
  * Return: 0.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[]et number)
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *hd;
 	int v;
