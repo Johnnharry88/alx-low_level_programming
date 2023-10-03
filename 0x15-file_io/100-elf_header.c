@@ -113,8 +113,7 @@ void dataprint(unsigned char *e_ident)
  */
 void ver_print(unsigned char *e_ident)
 {
-	printf("  Version:                           %d",
-				       e_ident[EI_VERSION]);
+	printf("  Version: %d", e_ident[EI_VERSION]);
 	switch (e_ident[EI_VERSION])
 	{
 		case EV_CURRENT:
@@ -178,8 +177,7 @@ void osprint(unsigned char *e_ident)
  */
 void verabiprint(unsigned char *e_ident)
 {
-	printf("  ABI Version:                       %d\n",
-				       e_ident[EI_ABIVERSION]);
+	printf("  ABI Version: %d\n", e_ident[EI_ABIVERSION]);
 }
 
 /**
