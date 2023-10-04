@@ -5,14 +5,12 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{	char alpha = 'a';
-	while (alpha <= 'z')
-{
+{	char alpha = 'a'; while (alpha <= 'z')
+	{	
 	if (alpha != 'e' && alpha != 'q')
-{	putchar(alpha);
-}
+		putchar(alpha);
 	alpha++;
-}
+	}
 	putchar('\n');
 return (0);
 }
