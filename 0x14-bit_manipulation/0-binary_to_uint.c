@@ -12,7 +12,6 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 		return (0);
-	
 	if (b)
 	{
 		while (b[alx] != '\0')
