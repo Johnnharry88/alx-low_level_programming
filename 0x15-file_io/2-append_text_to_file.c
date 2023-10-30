@@ -22,5 +22,5 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (alx == -1 || wrt == -1)
 		return (-1);
 	close(alx);
-	return (-1);
+	return (1);
 }
