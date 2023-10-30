@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 {
 	int file_to;
 	int file_from;
-	int alx;
-	int wrt;
+	int alx, errclose;
+	int wrt, err_close;
 	char store[1024];
 
 	if (argc != 3)
@@ -40,17 +40,8 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	if (file_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(98);
-	}
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_APPEND, 0664);
-	if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %d\n", file_from);
-		exit(99);
-	}
+	check_error(file_from, file_to, argv);
 	alx = 1024;
 	while (alx == 1024)
 	{
@@ -61,7 +52,9 @@ int main(int argc, char *argv[])
 		if (wrt == -1)
 			check_error(0, -1, argv);
 	}
-	if (close(file_from) == -1 || close(file_to) == -1)
+	errclose = close(file_from);
+	err_close = close(file_to);
+	if (errclose == -1 || err_close == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
