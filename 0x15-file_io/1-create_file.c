@@ -10,7 +10,7 @@ int create_file(const char *filename, char *text_content)
 	int action, rec;
 	int output;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
 	action = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	
@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 			;
 		}
 		output = write(action, text_content, rec);
-		if (output == -1 || rec == -1)
+		if (output == -1 || action == -1)
 			return (-1);
 	}
 	close(action);
