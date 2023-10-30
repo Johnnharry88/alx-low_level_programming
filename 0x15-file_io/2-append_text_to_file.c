@@ -16,11 +16,13 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	alx = open(filename, O_WRONLY | O_APPEND);
 	if (text_content != NULL)
+	{
 		for (rec = 0; text_content[rec]; rec++)
 			;
-	wrt = write(alx, text_content, rec);
+		wrt = write(alx, text_content, rec);
 	if (alx == -1 || wrt == -1)
 		return (-1);
+	}
 	close(alx);
 	return (1);
 }
