@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * adddnodeint - functiona that adds a new node at the begining of dlistint_t
+ * add_dnodeint - functiona that adds a new node at the begining of dlistint_t
  * @head: containing th ddress of the dlistint_t
  * @n: interger to be stored in the new node
  * Return: NULL or pointer to the new node.

@@ -13,5 +13,5 @@ int sum_dlistint(dlistint_t *head)
 	{
 		res = res + elx->n;
 	}
-	return (res);	
+	return (res)
 }

@@ -3,6 +3,7 @@
  * delete_dnodeint_at_index - function that deletes node from a dlistint
  * at a givien index.
  * @head: a pointer to the had of dlistint_t.
+ * @index: container holding the number at node index
  * Return: -1 or 1
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
