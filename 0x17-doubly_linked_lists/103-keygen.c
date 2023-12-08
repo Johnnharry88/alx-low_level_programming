@@ -7,7 +7,7 @@
  * @argv: Arrray of arguments pointers.
  * Return: 0 (Success)
  */
-int main(int__attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	char passkey[7];
 	char *pin;
@@ -19,28 +19,25 @@ int main(int__attribute__((__unused__)) argc, char *argv[])
 	passkey[0] = pin[y];
 
 	y = 0;
-	for (z = 0, z < x; z++)
-	{
+	for (z = 0; z < x; z++)
 		y = y + argv[1][z];
-	}
 	passkey[1] = pin[(y ^ 79) & 63];
 	y = 1;
-	for (z = 0; z < x; z+=)
-	{
+	for (z = 0; z < x; z++)
 		y = y * argv[1][z];
-	}
+
 	passkey[2] = pin[(y ^ 85) & 63];
 	y = 0;
-	for (z = 0; z < x; z ++)
+	for (z = 0; z < x; z++)
 	{
 		if(argv[1][z] > y)
 			y = argv[1][z];
 	}
 	srand(y ^ 14);
 	passkey[3] = pin[rand() &63];
-	y = 0
+	y = 0;
 	for (z = 0; z < x; z++)
-		y = y + (argv[1][z] * argv[1][z];
+		y = y + (argv[1][z] * argv[1][z]);
 	passkey[4] = pin[(y ^ 239) & 63];
 	for (z = 0; z < x; z++)
 		y = rand();
@@ -49,4 +46,3 @@ int main(int__attribute__((__unused__)) argc, char *argv[])
 	printf("%s", passkey);
 	return (0);
 }
-	
