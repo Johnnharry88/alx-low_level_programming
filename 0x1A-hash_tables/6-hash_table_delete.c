@@ -5,15 +5,15 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	hash_table *head = ht;
+	hash_table_t *head = ht;
 	hash_node_t *ptr, *cls;
 	unsigned long int a;
 
 	for (a = 0; a < ht->size; a++)
 	{
-		if (ht->array[x] != NULL)
+		if (ht->array[a] != NULL)
 		{
-			ptr = ht->array[x];
+			ptr = ht->array[a];
 			while (ptr != NULL)
 			{
 				cls = ptr->next;
