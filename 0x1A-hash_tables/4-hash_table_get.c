@@ -20,5 +20,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	alx = ht->array[count];
 	while (alx && strcmp(alx->key, key) != 0)
 		alx = alx->next;
-	return ((alx != NULL) ? alx->value : NULL);
+	return ((alx == NULL) ? NULL : alx->value);
 }
