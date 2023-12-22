@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_tabes_print -function that prints hash table to the standard
+ * hash_table_print -function that prints hash table to the standard
  * output
  * @ht: holding address of hash table to print.
  * Return: void.
