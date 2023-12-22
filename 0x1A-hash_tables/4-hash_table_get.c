@@ -11,8 +11,9 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *alx;
 	unsigned long int count;
 
-	if (ht == NULL || hey == NULL || *key == '\0')
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
+
 	count = key_index((const unsigned char *)key, ht->size);
 	if (count >= ht->size)
 		return (NULL);
@@ -20,5 +21,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	alx = ht->array[count];
 	while (alx && strcmp(alx->key, key) != 0)
 		alx = alx->next;
+
 	return ((alx == NULL) ? NULL : alx->value);
 }
