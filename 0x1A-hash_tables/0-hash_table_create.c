@@ -5,6 +5,7 @@
  * @size: Size of array to be used
  * Return: NULL else a pointer to the new hash table
  */
+
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int x = 0;
