@@ -2,6 +2,7 @@
 """Module that evaluates the perimeter of an island"""
 
 def island_perimeter(grid):
+    """Module returns the perimener of an island"""
     x = 0
     lent = len(grid) - 1 
     for i in range(lent):
