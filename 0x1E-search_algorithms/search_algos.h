@@ -19,7 +19,7 @@ typedef struct listint_s
 } listint_t;
 
 /**
- * struct skiplit_s - singly linked list 
+ * struct skiplist_s - singly linked list
  * @n: Integer
  * @index: Index of the node i the list
  * @next: Pointer to the next noe
