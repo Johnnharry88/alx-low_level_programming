@@ -21,7 +21,7 @@ typedef struct listint_s
 /**
  * struct skiplit_s - singly linked list 
  * @n: Integer
- * @Index: Index of the node i the list
+ * @index: Index of the node i the list
  * @next: Pointer to the next noe
  * @express: Pointer to the next node in th eexpress lane
  * Description: Singly linked list node structure with an express lane
