@@ -5,7 +5,7 @@
  * @array: pointer to the first element in an array
  * @size: number of elements in input array
  * @value: value to be serched for in an arrya
- * Returns: index of value if found else -1
+ * Return: index of value if found else -1
  */
 
 int binary_search(int *array, size_t size, int value)
@@ -19,7 +19,7 @@ int binary_search(int *array, size_t size, int value)
 	left = 0;
 	right = size - 1;
 
-	while (left < right)
+	while (left <= right)
 	{
 		mid = (left + right) / 2;
 
